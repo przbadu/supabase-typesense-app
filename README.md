@@ -1,24 +1,23 @@
-# README
+# Supabase Typesense App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a starter project for a full-stack app using Supabase and Typesense.
 
-Things you may want to cover:
+## Setting up
 
-* Ruby version
+1. Copy the `.env.example` file to `.env` and fill in the environment variables.
 
-* System dependencies
+```sh
+cp .env.example .env
+```
 
-* Configuration
+2. Setup the project
 
-* Database creation
+```sh
+bin/setup
+```
 
-* Database initialization
+3. Run the app
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+bin/dev
+```

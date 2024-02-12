@@ -21,7 +21,7 @@ default: &default
 
 development:
   <<: *default
-  database: supabase_typesense_app_development
+  url: <%= ENV["DATABASE_URL"] %>
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -79,6 +79,4 @@ test:
 #
 production:
   <<: *default
-  database: supabase_typesense_app_production
-  username: supabase_typesense_app
-  password: <%= ENV["SUPABASE_TYPESENSE_APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
